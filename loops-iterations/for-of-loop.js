@@ -12,3 +12,21 @@ function sumArray(numbers) {
   return total;
 }
 console.log(sumArray(numbers));
+
+//Challenge: Print Names of Active Users.You have an array of user objects. Each user has a name and an isActive boolean. Write a function printActiveUsers(users) that: Loops through the array using a for...of loop.Prints only the names of users whose isActive property is true.
+
+const users = [
+  { name: "Alice", isActive: true },
+  { name: "Bob", isActive: false },
+  { name: "Charlie", isActive: true },
+];
+
+function printActiveUsers(users) {
+  for (let user of users) {
+    if (user.isActive === true) {
+      console.log(user.name);
+    }
+  }
+}
+
+printActiveUsers(users);
