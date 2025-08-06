@@ -11,9 +11,9 @@ function sumArray(numbers) {
 
   return total;
 }
-console.log(sumArray(numbers));
+/* console.log( */ sumArray(numbers) /* ) */;
 
-//02 - Challenge: Print Names of Active Users.You have an array of user objects. Each user has a name and an isActive boolean. Write a function printActiveUsers(users) that: Loops through the array using a for...of loop.Prints only the names of users whose isActive property is true.
+//02 - Print Names of Active Users.You have an array of user objects. Each user has a name and an isActive boolean. Write a function printActiveUsers(users) that: Loops through the array using a for...of loop.Prints only the names of users whose isActive property is true.
 
 const users = [
   { name: "Alice", isActive: true },
@@ -31,7 +31,7 @@ function printActiveUsers(users) {
 
 printActiveUsers(users);
 
-//03 - Challenge: Average Score of Passed Students. You have an array of student objects. Each student has a name, a scores array, and a passed boolean. Write a function that: Loops through the students. Filters only the students who passed (passed: true). Calculates the average score for each passed student. Returns an array of strings with the format: "StudentName: averageScore".
+//03 - Average Score of Passed Students. You have an array of student objects. Each student has a name, a scores array, and a passed boolean. Write a function that: Loops through the students. Filters only the students who passed (passed: true). Calculates the average score for each passed student. Returns an array of strings with the format: "StudentName: averageScore".
 
 const students = [
   { name: "Ana", scores: [80, 90, 85], passed: true },
@@ -56,4 +56,20 @@ function passedStudents(students) {
   return result;
 }
 
-console.log(passedStudents(students));
+/* console.log( */ passedStudents(students) /* ) */;
+
+//04 - Write a function filterLongWords that takes in an array of words and returns a new array containing only the words that are longer than 4 characters.Use a for...of loop.
+
+const words = ["hi", "hello", "sunshine", "yes", "amazing"];
+
+function filterLongWords(words) {
+  const longWords = [];
+  for (let word of words) {
+    if (word.length > 4) {
+      longWords.push(word);
+    }
+  }
+
+  return longWords;
+}
+/* console.log( */ filterLongWords(words) /* ) */;
