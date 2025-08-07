@@ -12,4 +12,29 @@ function canVote(age) {
     return "Invalid age!";
   }
 }
-console.log(canVote(17));
+/* console.log( */ canVote(17) /* ) */;
+
+//2. Day of the week classifier
+// Use a switch statement to classify the day:
+// - "Start of the week" for Monday or Tuesday
+// - "Midweek" for Wednesday or Thursday
+// - "Weekend" for Friday, Saturday, or Sunday
+
+const day = "friday";
+switch (day) {
+  case "monday":
+  case "tuesday":
+    console.log("Start of the week");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Midweek");
+    break;
+  case "friday":
+  case "saturday":
+  case "sunday":
+    console.log("Weekend");
+    break;
+  default:
+    console.log("Invalid input");
+}
